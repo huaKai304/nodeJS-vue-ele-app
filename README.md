@@ -39,8 +39,8 @@
   + git上下载源码或clone到本地，
 	+ git@github.com:huaKai304/nodeJS-vue-ele-app.git
 	
-  + 根目录下依赖模块安装
-	+ npm run client-install 和 npm/cnpm install
+  + 根目录和client目录下安装依赖模块
+	+ npm/cnpm install
 
   + 所有依赖安装成功后在当前目录启动执行启动命令,
 	+ npm run serve
