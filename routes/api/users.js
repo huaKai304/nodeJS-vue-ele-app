@@ -25,17 +25,16 @@ router.post('/register', (req, res) => {
     if (user) {
       return res.status(400).json('邮箱已被注册!');
     } else {
-      // const avatar = gravatar.url(req.body.email, {
-      //   s: '200',
-      //   r: 'pg',
-      //   d: 'mm'
-      // });
-      const src = "http://img2.imgtn.bdimg.com/it/u=3615831237,1510664097&fm=26&gp=0.jpg"
+        const avatar = gravatar.url(req.body.email, {
+        s: '200',
+        r: 'pg',
+        d: 'mm'
+      });
 
       const newUser = new User({
         name: req.body.name,
         email: req.body.email,
-        avatar: src,
+        avatar,
         password: req.body.password,
         identity: req.body.identity
       });
