@@ -40,7 +40,7 @@
 	+ git@github.com:huaKai304/nodeJS-vue-ele-app.git
 	
   + 根目录下依赖模块安装
-	+ npm/cnpm install client-install 和 npm/cnpm install
+	+ npm run client-install 和 npm/cnpm install
 
   + 所有依赖安装成功后在当前目录启动执行启动命令,
 	+ npm run serve
